@@ -1,0 +1,49 @@
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 50px 0;
+}
+.portfolio-content .port {
+  background-color: #fff;
+  border-radius: 30px;
+  position: relative;
+}
+
+.portfolio-content .port::before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f004';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: var(--bg-main);
+  border-radius: 50%;
+  bottom: 15px;
+  right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.portfolio-content .port img {
+  max-width: 100%;
+  height: 70%;
+}
+.portfolio-content .port .text {
+  padding: 0px 20px 0 20px;
+  margin-top: 20px;
+}
+.portfolio-content .port .text p {
+  font-size: 15px;
+  color: #ddd;
+  font-weight: 600;
+}
+.portfolio-content .port .text h3 {
+  font-weight: bold;
+  margin: 25px 0;
+}

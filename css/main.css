@@ -1,0 +1,287 @@
+/* start All Header */
+header {
+  padding-top: 10px;
+  position: fixed;
+  width: 100%;
+  background-color: #00000042;
+  top: 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .logo a img {
+  width: 50px;
+  border-radius: 0;
+}
+/* start header in big media */
+header .container .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .links nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .links nav ul li {
+  padding: 0px 15px;
+}
+header .links nav ul li a {
+  color: var(--main-color-white);
+  font-weight: bold;
+  transition: .3s;
+}
+header .links nav ul li:hover a {
+  background-image: var(--bg-main);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* active */
+header .links nav ul li a.active {
+  background-image: var(--bg-main);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+header .subscriber-big {
+  font-size: 18px;
+  font-weight: bold;
+  background: var(--bg-main);
+  padding: 12px 20px;
+  border-radius: 30px;
+  color: var(--subscriber-watch);
+}
+/* end header in big media */
+.img-main {
+  border-radius: 0;
+  margin-top: 150px;
+}
+/* start main */
+main {
+  margin-top: 120px;
+}
+main .total-content {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+main .total-content .cnt-content {
+  width: 58%;
+  position: relative;
+}
+main .total-content .cnt-content .title-inner h2 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  line-height: 1;
+  color: var(--main-color-white);
+}
+main .total-content .cnt-content .title-inner h2 span {
+  background-image: var(--bg-main);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* start title-animation */
+main .total-content .cnt-content .title-inner .title-animation {
+  width: 120%;
+  height: 50px;
+  position: relative;
+  margin: 30px 0px;
+}
+main .total-content .cnt-content .title-inner .title-animation p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: var(--main-color-white);
+  font-size: 45px;
+  font-weight: bold;
+}
+main .total-content .cnt-content .title-inner .title-animation p span {
+  background-image: var(--bg-main);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+main .total-content .cnt-content .description p {
+  color: var(--main-color-white);
+  font-size: 17px;
+}
+/* start button  */
+main .total-content .cnt-content .btn-area .btn {
+  font-size: 18px;
+  padding: 15px 20px;
+  margin: 40px 0 20px 0;
+  background: var(--bg-main);
+  border-radius: 25px;
+  color: var(--subscriber-watch);
+  font-weight: bold;
+  cursor: pointer;
+}
+main .total-content .cnt-content .btn-area .btn i {
+  margin-right: 14px;
+}
+/* end button  */
+/* start img All style */
+main .total-content .cnt-img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 58%;
+  position: relative;
+}
+main .total-content .cnt-img .block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background: #081021;
+  border-radius: 30px;
+}
+  main .total-content .cnt-img .block::after {
+  content: '-40%';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-main);
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  transform: translate(-50%, 20px);
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  color: var(--color-body);
+  font-weight: bold;
+  font-size: 20px;
+}
+main .total-content .cnt-img .block::before {
+  content: '$22';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-main);
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  right: 20px;
+  top: 20px;
+  border-radius: 33px;
+  color: var(--color-body);
+  font-weight: bold;
+  font-size: 20px;
+}
+main .total-content .cnt-img .block img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 20%;
+}
+/* end img All style */
+/* end main */
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 100px;
+}
+.title::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  top: -30px;
+}
+.container:first-child .title::before {
+  display: none;
+}
+.title h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.title a {
+  background: var(--bg-main);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+footer {
+  background-color: #000;
+}
+footer img {
+  width: 50px;
+  border-radius: 0;
+  margin: 30px 0 40px 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer .all-cnt {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 30px;
+  position: relative;
+}
+footer .all-cnt::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  top: -30px;
+}
+footer .all-cnt p {
+  color: #fff;
+}
+/* start icon follow */
+footer .all-cnt .follow-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 330px;
+  gap: 25px;
+}
+footer .all-cnt .follow-area span {
+  color: var(--main-color-white);
+  position: relative;
+  padding-right: 72px;
+  font-size: 17px;
+  font-weight: bold;
+}
+footer .all-cnt .follow-area span::before {
+  content: '';
+  position: absolute;
+  border: none;
+  width: 50px;
+  height: 1.3px;
+  background-color: var(--main-color-white);
+  margin-left: 0;
+  right: 0;
+  top: 13px;
+}
+footer .all-cnt .follow-area .flw-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+footer .all-cnt .follow-area .flw-icon a {
+  color: var(--main-color-white);
+  font-size: 16px;
+  transition: .3s;
+}
+footer .all-cnt .follow-area .flw-icon a i:hover {
+  background-image: var(--bg-main);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* end icon follow */

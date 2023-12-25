@@ -1,0 +1,131 @@
+body {
+  background-color: var(--color-body-dark);
+}
+.login {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.login::before {
+  content: '';
+  background: repeating-conic-gradient(from -45deg, var(--bg1) 0%, var(--bg1) 5%, transparent 5%, transparent 40%, var(--bg1) 50%);
+  position: absolute;
+  border-radius: 7px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  scale: 1.025;
+}
+.login::after {
+  content: '';
+  border-radius: 7px;
+  background: repeating-conic-gradient(from 45deg, var(--bg2) 0%, var(--bg2) 5%, transparent 5%, transparent 40%, var(--bg2) 50%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  left: 0;
+  top: 0;
+  scale: 1.025;
+}
+.login .box {
+  border-radius: 7px;
+  padding: 0 30px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-body-dark);
+}
+.login .box .form {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.login .box .form form .user-pass input {
+  width: 100%;
+}
+.all-cnt-login h1 {
+  text-align: center;
+  font-size: 36px;
+  color: var(--main-color-white);
+  padding-top: 25px;
+}
+.all-cnt-login .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  position: relative;
+}
+.all-cnt-login .input-box input {
+  padding: 20px 20px 15px 0;
+  width: 100%;
+  left: 50%;
+  color: var(--main-color-white);
+  transform: translateX(-50%);
+  position: absolute;
+  background-color: transparent;
+  border-bottom: 2px solid var(--main-color-white);
+}
+.all-cnt-login .input-box p {
+  position: absolute;
+  top: 100%;
+  color: red;
+  font-size: 13px;
+  padding-top: 10px;
+  overflow: hidden;
+  transition: .3s;
+  max-height: 0px;
+}
+.all-cnt-login .input-box i {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-28%);
+  right: 20px;
+  background-color: var(--color-body-dark);
+  color: var(--main-color-white);
+  cursor: pointer;
+  transition: .3s;
+}
+.all-cnt-login .input-box i#show {
+  opacity: 0;
+}
+.all-cnt-login .remember-forgot {
+  color: var(--main-color-white);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -12px;
+  transition: .3s;
+}
+.all-cnt-login .remember-forgot a:first-child {
+  color: #8a9198;
+  font-size: 14px;
+}
+.all-cnt-login .remember-forgot a:last-child {
+  color: var(--main-color-white);
+  font-weight: bold;
+}
+.all-cnt-login .btn {
+  background-color: var(--main-color-white);
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--color-body-dark);
+  cursor: pointer;
+}
